@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f1bd1b;
+}
+header figure {
+    text-align: center;
+}
+
+/* page entrer */
+
+#page-entrer {
+    display: flex;
+    justify-content: center;
+}
+#btn {
+    font-family: "Bangers", cursive;
+    font-size: 2rem;
+    margin: 15rem 10rem;
+    color: white;
+    width: 10vw;
+    height: 10vh;
+    background-color: #03989e;
+    box-shadow: 0px 4px 4px black;
+    border-radius: 14px;
+    text-shadow: 0px 4px 4px black;
+}
+#tbl ol {
+    font-family: "bangers";
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    bottom: 45%;
+    left: 40%;
+    list-style: none;
+}
+
+/* page jeu */
+
+#page-jeu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#page-jeu div {
+    display: flex;
+    margin: 0 auto;
+}
+#page-jeu h1 {
+    margin: 2rem 5rem;
+    font-family: "bangers";
+    color: white;
+    text-shadow: 0px 4px 4px black;
+}
+#deck {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    width: 50%;
+    align-self: center;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+#deck div {
+    cursor: pointer;
+    transition: transform 1s;
+}
+.cards {
+    width: 80px;
+    height: 100px;
+    border-radius: 2px;
+}
+.backCards {
+    transform: rotateY(180deg);
+    background: center/cover no-repeat url(img/carte) !important;
+}
+.rejouer {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px black;
+    background-color: #03989e;
+}
